@@ -1,7 +1,7 @@
 function update_scoreboard () {
     OLED.clear()
-    OLED.writeStringNewLine("player a" + Player_A)
-    OLED.writeStringNewLine("player b" + Ties)
+    OLED.writeStringNewLine("player A" + Player_A)
+    OLED.writeStringNewLine("player B" + Ties)
     OLED.writeStringNewLine("ties" + Player_B)
     OLED.writeStringNewLine("rounds" + rounds)
 }
