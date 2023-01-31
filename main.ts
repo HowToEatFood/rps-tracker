@@ -9,6 +9,16 @@ function update_scoreboard () {
     OLED.writeStringNewLine("player B" + Player_B)
     OLED.writeStringNewLine("ties" + Ties)
     OLED.writeStringNewLine("rounds" + rounds)
+    if (Player_A == 10) {
+        OLED.init(128, 64)
+        OLED.writeStringNewLine("PLAYER A WINS!")
+        reset()
+    }
+    if (Player_B == 10) {
+        OLED.init(128, 64)
+        OLED.writeStringNewLine("PLAYER B WINS!")
+        reset()
+    }
 }
 input.onButtonPressed(Button.AB, function () {
     Ties += 1
