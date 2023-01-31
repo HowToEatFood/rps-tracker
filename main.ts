@@ -21,6 +21,12 @@ function update_scoreboard () {
         basic.pause(3000)
         reset()
     }
+    if (Ties == 15) {
+        OLED.init(128, 64)
+        OLED.writeStringNewLine("TIE GAME")
+        basic.pause(3000)
+        reset()
+    }
 }
 input.onButtonPressed(Button.AB, function () {
     Ties += 1
