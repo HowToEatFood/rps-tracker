@@ -17,6 +17,7 @@ function update_scoreboard () {
     if (Player_B == 10) {
         OLED.init(128, 64)
         OLED.writeStringNewLine("PLAYER B WINS!")
+        basic.pause(1000)
         reset()
     }
 }
